@@ -1,0 +1,14 @@
+LFscheme.o: LFscheme.cpp LFscheme.h M_vector.h math_lib.h cell.h point.h \
+ global.h
+M_vector.o: M_vector.cpp
+boundary.o: boundary.cpp boundary.h
+cell.o: cell.cpp cell.h point.h
+configuration.o: configuration.cpp configuration.h
+global.o: global.cpp global.h cell.h point.h
+main.o: main.cpp boundary.h cell.h point.h LFscheme.h M_vector.h \
+ math_lib.h global.h meshReadWrite.h configuration.h
+math_lib.o: math_lib.cpp point.h
+meshReadWrite.o: meshReadWrite.cpp meshReadWrite.h
+point.o: point.cpp point.h
+bc.o: bc.cpp bc.h
+postproc.o:
